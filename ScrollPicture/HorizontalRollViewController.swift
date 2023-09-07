@@ -115,7 +115,7 @@ class HorizontalRollViewController: UIViewController, UICollectionViewDataSource
             
             let i = Int(scrollView.contentOffset.x / (itemWidth + lineSpacing) + 1)
             
-            let indexPath = IndexPath(row: i - 1, section: 0)
+            let indexPath = IndexPath(row: i, section: 0)
             
             collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
 
