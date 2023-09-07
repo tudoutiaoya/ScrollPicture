@@ -20,6 +20,7 @@
 		FF693D042AA975F300B0321C /* ScrollPictureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF693D032AA975F300B0321C /* ScrollPictureTests.swift */; };
 		FF693D0E2AA975F300B0321C /* ScrollPictureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF693D0D2AA975F300B0321C /* ScrollPictureUITests.swift */; };
 		FF693D102AA975F300B0321C /* ScrollPictureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF693D0F2AA975F300B0321C /* ScrollPictureUITestsLaunchTests.swift */; };
+		FF693D1D2AA976D300B0321C /* HorizontalRollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF693D1C2AA976D300B0321C /* HorizontalRollViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		FF693D092AA975F300B0321C /* ScrollPictureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollPictureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF693D0D2AA975F300B0321C /* ScrollPictureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPictureUITests.swift; sourceTree = "<group>"; };
 		FF693D0F2AA975F300B0321C /* ScrollPictureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPictureUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF693D1C2AA976D300B0321C /* HorizontalRollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalRollViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +115,6 @@
 				3FE4669919F0D7E0D04A71B9 /* Pods-ScrollPictureTests.debug.xcconfig */,
 				53C39A264CB467E7D4E11E2C /* Pods-ScrollPictureTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -150,6 +151,7 @@
 				FF693CF72AA975F300B0321C /* LaunchScreen.storyboard */,
 				FF693CFA2AA975F300B0321C /* Info.plist */,
 				FF693CF22AA975F200B0321C /* ScrollPicture.xcdatamodeld */,
+				FF693D1C2AA976D300B0321C /* HorizontalRollViewController.swift */,
 			);
 			path = ScrollPicture;
 			sourceTree = "<group>";
@@ -413,6 +415,7 @@
 				FF693CEE2AA975F200B0321C /* ViewController.swift in Sources */,
 				FF693CF42AA975F200B0321C /* ScrollPicture.xcdatamodeld in Sources */,
 				FF693CEA2AA975F200B0321C /* AppDelegate.swift in Sources */,
+				FF693D1D2AA976D300B0321C /* HorizontalRollViewController.swift in Sources */,
 				FF693CEC2AA975F200B0321C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
