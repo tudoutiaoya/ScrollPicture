@@ -1,0 +1,55 @@
+# Xcode
+.DS_Store
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+!default.xcworkspace
+xcuserdata
+-profile
+*.moved-aside
+DerivedData
+.idea/
+project.xcworkspace/
+dist/
+*~.nib
+*.orig
+
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
+# 
+# Note: if you ignore the Pods directory, make sure to uncomment
+# `pod install` in .travis.yml
+#
+/Pods/
+/TantanBinarySource/
+*.xcworkspace
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+#文案下载产生的临时文件
+client-strings-archive.zip
+client-strings-archive
+
+# CocoaPods plugin
+Podfile_User
+/tantan_lldb_init_file
+/Podfile_Tantan
+tantan-redundant-target-for-indexing.xcscheme
+Podfile.lock
