@@ -14,7 +14,7 @@ class HorizontalRollViewController: UIViewController, UICollectionViewDataSource
     let layout: UICollectionViewFlowLayout
     
     var myOffsetX = 0.0 // 记录上次的offsetx便于判断是左滑还是右滑
-    let groupNum = 100 // 定义多少个组
+    let groupNum = 6 // 定义多少个组, 滑动到左右两边头的时候会有明显的切换效果
     
     let lineSpacing = 30.0
     let itemWidth = UIScreen.main.bounds.width/2 // 卡片宽度
@@ -98,6 +98,7 @@ class HorizontalRollViewController: UIViewController, UICollectionViewDataSource
         let rightOffset = adjustedContentWidth - scrollView.bounds.width // 右侧边界的偏移量
         if (scrollView.contentOffset.x >= rightOffset || scrollView.contentOffset.x <= 0) {
             collectionView.scrollToItem(at: IndexPath.init(item: groupNum/2 * images.count , section: 0), at: .centeredHorizontally, animated: false)
+            print("切换了")
             return
         }
         
