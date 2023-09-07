@@ -13,7 +13,7 @@ class HorizontalRollViewController: UIViewController, UICollectionViewDataSource
     let images = ["image1", "image2", "image3"]
     let layout: UICollectionViewFlowLayout
     
-    var myOffsetX = 0.0 // 滑动时的偏移量
+    var myOffsetX = 0.0 // 记录上次的offsetx便于判断是左滑还是右滑
     let groupNum = 100 // 定义多少个组
     
     let lineSpacing = 30.0
@@ -54,7 +54,7 @@ class HorizontalRollViewController: UIViewController, UICollectionViewDataSource
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // 最大值实现循环
+        // 图片的数量
         return groupNum * images.count
     }
     
@@ -62,7 +62,7 @@ class HorizontalRollViewController: UIViewController, UICollectionViewDataSource
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UICollectionViewCell", for:indexPath)
         // 移除之前的子视图
         cell.contentView.subviews.forEach { $0.removeFromSuperview() }
-        
+        // 取余 计算出应该在images数组哪个位置
         let imageIndex = indexPath.item % images.count
         let imageView = UIImageView(image: UIImage(named: images[imageIndex]))
         imageView.frame = cell.bounds
@@ -92,7 +92,7 @@ class HorizontalRollViewController: UIViewController, UICollectionViewDataSource
 
     func scrollToNextPageOrLastPage(_ scrollView: UIScrollView) {
         
-        // 到达左右边界
+        // 到达左右边界，定位到中间
         let contentWidth = (itemWidth+lineSpacing) * Double(groupNum*images.count) // 内容的总宽度
         let adjustedContentWidth = contentWidth - lineSpacing // 调整后的内容宽度，减去最后一个间距
         let rightOffset = adjustedContentWidth - scrollView.bounds.width // 右侧边界的偏移量
